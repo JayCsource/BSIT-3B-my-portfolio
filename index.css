@@ -57,6 +57,7 @@ section {
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ffffff;
+    opacity: 0.5;
 }
 footer {
     text-align: center;
