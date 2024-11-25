@@ -1,62 +1,127 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Personal Portfolio </title>
+    <!---external css ---->
     <link rel="stylesheet" href="index.css">
+    <!---font awesome cdn for font icons---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<video id="background-video" autoplay loop muted poster="goks">
-    <source src="goks.mp4" type="video/mp4">
-  </video>
 <body>
-    <script src="js/index.js">
-    </script>
-    <header>
-        <marquee><h1 style="color: white">M Y  P O R T F O L I O</h1></marquee>
-        <nav>
-            <ul>
-                <li><a href="#About Me">About Me</a></li>
-                <li><a href="#Work Experience">Work Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-     
-    <section id="about">
-        <h2 style="color: white">About Me</h2>
-        <div class="project">
-        <p>Hi! I am Carlos John R. Navayra, 25 years old. Currently living in Caloocan City. Pursuing Bachelor of Science in Technology Information at the City of Malabon University. </p>
-    </div>
-    </section>
+   <div class="container">
+       <div class="profile-card"> 
+            <div class="profile-pic">
+                <img src="cj.jpg" alt="alt Cj">
+            </div>
 
-    <section id="Work Experience">
-        <h2 style="color: white">Work Experience</h2>
-        <div class="project">
-            <h3>Lazada Group Corp.</h3>
-            <p>Admin staff,Sorter,Backlogs</p>
-        </div>
-        <div class="project">
-            <h3>Delivery Courier</h3>
-            <p>Lalamove,Lazada,Grab Food</p>
-        </div>
-        <div class="project">
-            <h3>Nestle Philippines</h3>
-            <p>Admin Staff,Encoder</p>
-        </div>
-    </section>
+            <div class="profile-details">
+                 <div class="intro">
+                    <h2>Navayra Carlos John</h2>
+                    <h4> Future UI/UX Designer</h4>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook" style="color:var(--blue)"></i></a>
+                        <a href="#"><i class="fab fa-twitter"  style="color:var(--skyblue)"></i></a>
+                        <a href="#"><i class="fab fa-instagram"  style="color:var(--dark-pink)"></i></a>
+                        
+                    </div>
+                 </div>
 
-    <section id="contact">
-        <h2 style="color: white">Contact Me</h2>
-        <div class="project">
-        <p><h3> Email:</h3><a href="mailto:navayracarlos1999@gmail.com">navaracarlos1999@gmail.com</a></p>
-        <p><h3> Social Media: </h3>   <a href="mailto:https://www.facebook.com/pepelicios?mibextid=LQQJ4d">https://www.facebook.com/pepelicios?mibextid=LQQJ4d</a></p>
-        <p> <h3>Cellphone Number: </h3>     <a href="mailto:0951-917-4981">0951-917-4981</a></p>
-    </div>
-    </section>
+                 <div class="contact-info">
+                    <div class="row">
+                         <div class="icon">
+                            <i class="fa fa-phone"  style="color:var(--dark-magenta)"></i>
+                         </div>
+                         <div class="content">
+                            <span>Phone</span>
+                            <h5>+951 917 4981</h5>
+                         </div>
+                    </div>
 
-    <footer>
-        <p>&copy; 2024 MY PORTFOLIO</p>
-    </footer>
+                    <div class="row">
+                        <div class="icon">
+                           <i class="fa fa-envelope-open"  style="color:var(--light-green)"></i>
+                        </div>
+                        <div class="content">
+                           <span>Email</span>
+                           <h5>navayracarlos1999@gmail.com</h5>
+                        </div>
+                   </div>
+    
+                   <div class="row">
+                    <div class="icon">
+                       <i class="fa fa-map-marker"  style="color:var(--light-purple)"></i>
+                    </div>
+                    <div class="content">
+                       <span>Location</span>
+                       <h5>Metro Manila,Caloocan City</h5>
+                    </div>
+                 </div>
+
+            </div>
+               
+            </div>
+       </div>
+
+       <!----about section ----->
+       <div class="about">
+           <h1>About Me</h1>
+
+           <p> I'm soon to be Creative Director and UI/UX Designer from Caloocan City, Philippines,  
+            working in web development.I enjoy turning complex problems into simple, 
+            beautiful and intuitive designs.
+          </p>
+
+          <p>
+            My aim is to bring across your message and identity in the most creative way. 
+            I created web design for many famous brand companies.
+          </p>
+          <h2>Can I do</h2>
+          <div class="work">
+             <div class="workbox">
+                 <div class="icon">
+                    <img src="ui.svg" alt="">
+                 </div>
+                 <div class="desc">
+                    <h3>UI/UX Designer</h3>
+                    <p>specializes in creating user interfaces (UI) and user experiences (UX) for digital products, such as websites, mobile apps, and software applications.</p>
+                 </div>
+             </div>
+
+             <div class="workbox">
+                <div class="icon">
+                   <img src="app.svg" alt="">
+                </div>
+                <div class="desc">
+                   <h3>App Developement</h3>
+                   <p>creating software applications for mobile devices, encompassing various stages such as ideation, design, coding, testing, and deployment.</p>
+                </div>
+            </div>
+
+            <div class="workbox">
+                <div class="icon">
+                   <img src="api.svg" alt="">
+                </div>
+                <div class="desc">
+                   <h3>API Developement</h3>
+                   <p>creating application programming interfaces that allow different software systems to communicate.</p>
+                </div>
+            </div>
+
+            <div class="workbox">
+                <div class="icon">
+                   <img src="web.svg" alt="">
+                </div>
+                <div class="desc">
+                   <h3>Web Developement</h3>
+                   <p>creating and maintaining websites and web applications. It includes various aspects such as web design, coding, content management, and database management.</p>
+                </div>
+            </div>
+          </div>
+       </div>
+   </div>
 </body>
 </html>
