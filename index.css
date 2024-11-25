@@ -1,70 +1,83 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-        background-image: url(ff.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-    
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  #background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  
 }
 
 header {
-    background-image: url(ff.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-    text-align: center;
+  background-image: url(goks.mp4);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+  text-align: center;
 }
 img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    width: 170px;
-  }
-  
-  img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  }
-  
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: 170px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 section {
-    padding: 20px;
-    margin: 10px;
+  padding: 20px;
+  margin: 10px;
 }
 
 
 .project {
-    background: #ffffff;
+  background: #ffffff;
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ffffff;
-    opacity: 0.7;
+  opacity: 0.7;
 }
 footer {
-    text-align: center;
-    padding: 10px;
-    background-image: url(ff.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-}
+  text-align: center;
+  padding: 10px;
+  background-image: url(goks.mp4);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      
+      @media (max-width: 750px) {
+        #background-video { display: none; }
+        body {
+          background: url("goks") no-repeat;
+          background-size: cover;
+        }
+      }
+    }
